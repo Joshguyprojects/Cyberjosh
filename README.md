@@ -2,7 +2,7 @@
 Education and skills learned from cybersecurity sources 
 
 # Project Name  
-![GitHub_Invertocat_Dark](https://github.com/user-attachments/assets/dd291317-9b6f-4059-adfd-5c44c4e8bdd0)
+![image](https://github.com/user-attachments/assets/f7e26a52-1f9f-4015-8235-96883495a768)
   
 
 ## 🔍 About  
