@@ -18,3 +18,25 @@ The code below modifies text when a button is clicked.
   <button onClick="changeText()">Click Me</button>
 </body>
 </html>
+
+Creating a Random number generator:
+the function below is another HTML script that is used to generate and display a random number when a button is clicked.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+    <script>
+        function generateNumber() {
+            let randomNum = Math.floor(Math.random() * 100) + 1;
+            document.getElementById("result").innerHTML = "Random Number: " + randomNum;
+        }
+    </script>
+</head>
+<body>
+    <h2 id="result">Click the button to get a random number</h2>
+    <button onclick="generateNumber()">Generate</button>
+</body>
+</html>
