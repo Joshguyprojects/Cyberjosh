@@ -2,8 +2,8 @@
 Education and skills learned from cybersecurity sources 
 
 # Project Name  
-
-![Project Logo](https://via.placeholder.com/150)  
+![GitHub_Invertocat_Dark](https://github.com/user-attachments/assets/dd291317-9b6f-4059-adfd-5c44c4e8bdd0)
+  
 
 ## 🔍 About  
 A brief description of the project. Explain what it does and its purpose.  
