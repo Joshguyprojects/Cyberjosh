@@ -6,14 +6,10 @@ Education and skills learned from cybersecurity sources
   
 
 ## 🔍 About  
-A brief description of the project. Explain what it does and its purpose.  
-
+Cyberjosh projects is a repository showcasing progress throughout learning how to write diffrerent scripts in Different languages and building up the skills to use for automating cybersecurity tasks. The purpose of this project is to demonstrate my knowledge and areas for improvement. 
 ## 🚀 Features  
-- Feature 1  
-- Feature 2  
-- Feature 3  
+- Automation scripts for ethical hacking and cybersecurity defense 🔒
+- Network security analysis & vulnerability research 🔍
+- Including past projects of working with HTML and python 
 
-## 📦 Installation  
-1. Clone the repo:  
-   ```sh
-   git clone https://github.com/yourusername/project-name.git
+⚠️ Disclaimer: This project is for educational and ethical purposes only. Each script may not work as intended until further review and Personal understanding of Github for testing any system.
