@@ -1,0 +1,36 @@
+SSH brute force detector
+
+
+import re
+import pandas as pd
+from collections import Counter
+
+# Function to parse log file
+def parse_logs(log_file):
+    failed_attempts = []
+    
+    with open(log_file, "r") as file:
+        for line in file:
+            if "Failed password" in line:
+                ip_match = re.search(r"from (\d+\.\d+\.\d+\.\d+)", line)
+                if ip_match:
+                    failed_attempts.append(ip_match.group(1))
+    
+    return failed_attempts
+
+# Function to detect brute-force attacks
+def detect_bruteforce(attempts, threshold=5):
+    attack_counts = Counter(attempts)
+    return {ip: count for ip, count in attack_counts.items() if count >= threshold}
+
+# Main Execution
+log_path = "/var/log/auth.log"  # Change this for your system
+failed_ips = parse_logs(log_path)
+brute_force_ips = detect_bruteforce(failed_ips)
+
+# Convert to DataFrame and save results
+df = pd.DataFrame(list(brute_force_ips.items()), columns=["IP Address", "Attempts"])
+df.to_csv("bruteforce_attempts.csv", index=False)
+
+print(f"Brute-force attempts detected: \n{df}")
+
